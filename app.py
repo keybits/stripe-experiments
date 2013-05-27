@@ -1,3 +1,7 @@
+# Run this app to test strip connect
+# Start it with your keys in the command line - e.g:
+# PUBLISHABLE_KEY=pk_test_YOURKEY SECRET_KEY=sk_test_YOURKEY python app.py
+
 import os
 from flask import Flask, render_template, request
 import stripe

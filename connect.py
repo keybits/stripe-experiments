@@ -13,6 +13,10 @@ def connect():
      return render_template('connect.html')
 
 @app.route('/authorize')
+# Run this app to test Connect
+# Make sure to create your App in Stripe first
+# and create a keys.cfg file with the relevant test keys
+
 def authorize():
     site   = app.config['SITE'] + app.config['AUTHORIZE_URI']
     params = {
