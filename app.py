@@ -1,4 +1,4 @@
-# Run this app to test strip connect
+# Run this app to test Strip Checkout
 # Start it with your keys in the command line - e.g:
 # PUBLISHABLE_KEY=pk_test_YOURKEY SECRET_KEY=sk_test_YOURKEY python app.py
 
@@ -32,7 +32,7 @@ def charge():
         customer=customer.id,
         amount=amount,
         currency='eur',
-        description='a charge in dollars'
+        description='a charge in euros'
     )
 
     return render_template('charge.html', amount=amount)
